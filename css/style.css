@@ -278,3 +278,46 @@ main .icons a:hover {
 .apropos-info .travail h3, .apropos-info .travail h6 {
   font-size: 1.5rem;
 }
+
+/************************************************************
+********************* PAGE MES PROJETS **********************
+************************************************************/
+.projets {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.projets img {
+  width: 100%;
+  border: 3px #fff solid;
+}
+
+.projets img:hover {
+  opacity: 0.5;
+  border-color: #FDE74C;
+  transition: all 0.5s ease-out;
+}
+
+.btn-light, .btn-dark {
+  display: block;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+}
+
+.btn-light:hover, .btn-dark:hover {
+  background: #FDE74C;
+  color: #000;
+}
+
+.btn-dark {
+  background: black;
+  color: #fff;
+}
+
+.btn-light {
+  background: #9fb8d3;
+  color: #333;
+}
