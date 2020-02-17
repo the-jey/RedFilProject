@@ -62,6 +62,14 @@ main {
   min-height: calc(100vh-60px);
 }
 
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #14202c;
+  color: #fff;
+  height: 60px;
+}
+
 /************************************************************
 ********************** BOUTON MENU **************************
 ************************************************************/
@@ -224,4 +232,49 @@ main .icons a {
 main .icons a:hover {
   color: #FDE74C;
   transition: all 0.5s ease-out;
+}
+
+/************************************************************
+************************ PAGE A PROPOS **********************
+************************************************************/
+.apropos-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "bioimage bio bio" "travail-1 travail-2 travail-3";
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.apropos-info .bio-image {
+  grid-area: bioimage;
+  width: 60%;
+  margin: auto;
+  border-radius: 50%;
+  border: #FDE74C 3px solid;
+}
+
+.apropos-info .bio {
+  grid-area: bio;
+  font-size: 1.5rem;
+}
+
+.apropos-info .travail-1 {
+  grid-area: travail-1;
+}
+
+.apropos-info .travail-2 {
+  grid-area: travail-2;
+}
+
+.apropos-info .travail-3 {
+  grid-area: travail-3;
+}
+
+.apropos-info .travail {
+  background: #2c4661;
+  padding: 0.5rem;
+  border-bottom: #FDE74C 5px solid;
+}
+
+.apropos-info .travail h3, .apropos-info .travail h6 {
+  font-size: 1.5rem;
 }
